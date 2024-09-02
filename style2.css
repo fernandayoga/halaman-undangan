@@ -1,0 +1,150 @@
+body {
+    background: url('back.avif') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.invitation-container {
+    text-align: center;
+    padding: 30px;
+    background: rgb(140, 140, 140);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    max-width: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.bride-groom-info h1 {
+    font-size: 2.5em;
+    color: white; /* Gold color */
+    margin-bottom: 20px;
+    animation: slideDown 1s ease-in-out;
+}
+
+.bride-groom-info h2 {
+    margin: 10px 0;
+    font-size: 2em;
+    color: rgba(60, 99, 130, 1); /* Soft blue color */
+    animation: popUp 1s ease-in-out;
+}
+
+.guest-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: rgb(240, 240, 240);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.guest-item h3 {
+    font-size: 1.5em;
+    color: black /* Light blue color */
+    margin-bottom: 10px;
+}
+
+.guest-item h2 {
+    font-size: 2em;
+    color: black; /* Soft blue color */
+    margin: 5px 0;
+}
+
+.guest-item p {
+    font-size: 1.2em;
+    color: black; /* Soft blue color */
+}
+
+
+.view-invitation {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgba(25, 118, 210, 1); /* Dark blue color */
+    color: white;
+    border-radius: 30px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 30px;
+}
+
+.view-invitation a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    display: block;
+}
+
+.view-invitation:hover {
+    background-color: rgba(21, 101, 192, 1); /* Slightly lighter dark blue */
+    transform: scale(1.05);
+}
+
+.view-invitation:active {
+    transform: scale(0.95);
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popUp {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes bounceIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
